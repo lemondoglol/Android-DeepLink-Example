@@ -13,7 +13,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         deep_a.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("example://test/a")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(
+                "example://test/a?FirstName=Ryan&LastName=Chen"
+            )))
         }
 
         deep_b.setOnClickListener {
